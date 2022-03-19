@@ -1,0 +1,12 @@
+:root {
+  --treeViewBackgroundColor: #f8f8f8;
+  --treeViewPadding: 1rem 1rem 1rem 0;
+  --treeViewBorderRadius: 5px;
+  --treeViewNodeMargin: 1rem;
+}
+
+.root {
+  padding: var(--treeViewPadding);
+  background: var(--treeViewBackgroundColor);
+  border-radius: var(--treeViewBorderRadius);
+}

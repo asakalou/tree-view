@@ -1,0 +1,12 @@
+.root {
+  margin-left: var(--treeViewNodeMargin);
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.labelContent {
+  margin-left: 0.3rem;
+}

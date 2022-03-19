@@ -1,0 +1,20 @@
+.icon {
+    transition:0.3s;
+}
+
+.root {
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #eeeeee;
+    }
+
+    &.expanded {
+        & .icon {
+            transform: rotate(180deg);
+        }
+    }
+}
