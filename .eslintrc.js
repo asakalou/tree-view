@@ -61,5 +61,7 @@ module.exports = {
     ],
     'no-unused-vars': 0,
     '@typescript-eslint/no-unused-vars': 0,
+    'jsx-a11y/click-events-have-key-events': 'warn',
+    'jsx-a11y/interactive-supports-focus': 'warn',
   },
 }

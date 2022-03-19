@@ -4,9 +4,15 @@
 
 .label {
   margin-bottom: 0.5rem;
-  cursor: pointer;
 }
 
 .labelContent {
   margin-left: 0.3rem;
+}
+
+.item {
+  display: grid;
+  grid-gap: 0.25rem;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
 }

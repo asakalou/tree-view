@@ -27,13 +27,11 @@ export const lazyLoadDataSource: DataSource = {
 
 export const staticDataSource: DataSource = {
   getPageSize: () => 10,
-  getData: ({ size, page, item }) => {
-    return Promise.resolve({
+  getData: ({ size, page, item }) => Promise.resolve({
       page,
       pageSize: size,
       content: [],
       totalSize: 100,
       last: false,
-    })
-  },
+    }),
 }

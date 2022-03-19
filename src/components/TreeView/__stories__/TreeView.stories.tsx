@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from 'react'
-import { TreeView, TreeViewProps } from '../TreeView'
+import { TreeView } from '../TreeView'
 import { generateData } from './data/generator'
 import { RenderItem, TreeNode } from '../types'
 import { StoryLayout } from './StoryLayout'
@@ -13,7 +13,7 @@ export default {
   component: TreeView,
 }
 
-export function Primary(args: TreeViewProps) {
+export function Primary() {
   const [value, setValue] = useState<string[]>([])
 
   const handleSelect = (node: TreeNode) => {
@@ -25,15 +25,18 @@ export function Primary(args: TreeViewProps) {
   }
 
   return (
-    <StoryLayout title="Static Data" value={value}>
+    <StoryLayout
+      title="Static Data"
+      description="TreeView with static data."
+      value={value}
+    >
       <TreeView
         data={staticData}
         value={value}
         dataSource={staticDataSource}
         onSelect={handleSelect}
         onDeselect={handleDeselect}
-        collapsible
-        {...args}
+        collapsible={false}
       />
     </StoryLayout>
   )
@@ -55,7 +58,11 @@ export function LazyLoading() {
   }, [])
 
   return (
-    <StoryLayout title="Lazy Loading" value={value}>
+    <StoryLayout
+      title="Lazy Loading"
+      description="TreeView with lazy loading dataSource."
+      value={value}
+    >
       <TreeView
         data={initialData}
         value={value}
@@ -104,7 +111,11 @@ export function CustomRender() {
   )
 
   return (
-    <StoryLayout title="Custom renderItem" value={value}>
+    <StoryLayout
+      title="Custom renderItem"
+      description="TreeView with lazy loading dataSource. Load more is displayed until there are no items left to load."
+      value={value}
+    >
       <TreeView
         data={initialData}
         value={value}

@@ -1,31 +1,36 @@
 .root {
-    display: grid;
-    grid-template-areas: 'tree values';
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+  display: grid;
+  grid-template-areas: "tree values";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 
-    & h2 {
-        margin-top: 0;
-    }
+  & h2 {
+    margin-top: 0;
+  }
 }
 
 .tree {
-    grid-area: tree;
+  grid-area: tree;
+}
+
+.description {
+  margin-bottom: 0.5rem;
+  color: #7f7f7f;
 }
 
 .values {
-    grid-area: values;
+  grid-area: values;
 }
 
 .valuesList {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .value {
-    background: #c6e4fd;
-    padding: 5px 10px;
-    margin: 0 5px 5px;
-    border-radius: 5px;
-    font-size: 14px;
+  background: #c6e4fd;
+  padding: 5px 10px;
+  margin: 0 5px 5px;
+  border-radius: 5px;
+  font-size: 14px;
 }

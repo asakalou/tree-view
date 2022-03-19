@@ -9,36 +9,30 @@ export type TreeViewProps = {
    * Initial data for tree view
    */
   data: TreeNode[]
-
   /**
    * Define whether tree nodes are able to expand/collapse its content
    */
   collapsible?: boolean
-
   /**
    * Selected items
    */
   value: string[]
-
   /**
    * Tree data source
    */
   dataSource: DataSource
-
   /**
    * Callback for an item select event
    *
    * @param node
    */
   onSelect: (node: TreeNode) => void
-
   /**
    * Callback for an item deselect event
    *
    * @param node
    */
   onDeselect: (node: TreeNode) => void
-
   /**
    * Custom render item
    */

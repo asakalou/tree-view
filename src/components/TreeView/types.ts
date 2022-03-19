@@ -9,17 +9,14 @@ export type TreeNode = {
    * Label
    */
   label: string
-
   /**
    * Value
    */
   value: string
-
   /**
    * Children nodes
    */
   children?: TreeNode[]
-
   /**
    * Initially we don't know whether this node has child items to load
    * so this is helpful flag to understand that we should display show more or do lazy loading
@@ -32,22 +29,18 @@ export type PaginatedResult<T> = {
    * List of paginated items
    */
   content: T[]
-
   /**
    * Current page
    */
   page: number
-
   /**
    * Requested page size
    */
   pageSize: number
-
   /**
    * Total amount of items in db
    */
   totalSize: number
-
   /**
    * Is current page last or there are more pages to request
    */
@@ -68,7 +61,6 @@ export interface DataSource {
    * Requested page size
    */
   getPageSize: () => number
-
   /**
    * Request the data
    *
@@ -86,12 +78,10 @@ export type TreeViewProps = {
    * Initial data for tree view
    */
   data: TreeNode[]
-
   /**
    * Custom render item function
    */
   renderItem: RenderItem
-
   /**
    * DataSource which is responsible for data loading
    */

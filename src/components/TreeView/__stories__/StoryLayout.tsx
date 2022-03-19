@@ -3,15 +3,22 @@ import styles from './styles.css'
 
 type StoryLayoutProps = {
   title: string
+  description: ReactNode
   value: string[]
   children: ReactNode
 }
 
-export function StoryLayout({ title, children, value }: StoryLayoutProps) {
+export function StoryLayout({
+  title,
+  description,
+  children,
+  value,
+}: StoryLayoutProps) {
   return (
     <div className={styles.root}>
       <div className={styles.tree}>
         <h2>{title}</h2>
+        <div className={styles.description}>{description}</div>
         {children}
       </div>
 
