@@ -22,6 +22,8 @@ Component written in such a way that it can be easily decomposed and tools can b
 
 #### First Start:
 
+Tested on Node v 16.13.0.
+
 In your terminal or command line run:
 
     npm install
