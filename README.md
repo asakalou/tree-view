@@ -5,7 +5,7 @@
 - Lazy loading of the nodes and chldren via DataSource api
 - Ability to override `renderItem` - custom rendering of the node
 
-Please explore this features in storybook.
+Please explore these features in storybook.
 
 **Tests**  
 - Using `react-testing-library` for testing.
